@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ParksSearch.Models;
+using System.Linq;
 
 namespace ParksSearch.Controllers
 {
@@ -35,3 +35,12 @@ namespace ParksSearch.Controllers
       }
       return query.ToList();
     }
+
+    [HttpGet("{id}")]
+    public ActionResult<National> GetNationalPark(int id)
+    {
+      return _db.NationalParks.FirstOrDefault(entry => entry.Id == id);
+    }
+    
+  }
+}

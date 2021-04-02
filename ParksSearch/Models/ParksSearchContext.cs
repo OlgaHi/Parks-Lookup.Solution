@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ParksSearch.Models
 {
-    public class CretaceousParkContext : DbContext
+    public class ParksSearchContext : DbContext
     {
-        public ParksSearchContext(DbContextOptions<ParksSearchkContext> options)
+        public ParksSearchContext(DbContextOptions<ParksSearchContext> options)
             : base(options)
         {
         }
