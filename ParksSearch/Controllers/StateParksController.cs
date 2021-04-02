@@ -35,5 +35,11 @@ namespace ParksSearch.Controllers
       }
       return query.ToList();
     }
+
+    [HttpGet("{id}")]
+    public ActionResult<StatePark> GetStatePark(int id)
+    {
+      return _db.StateParks.FirstOrDefault(entry => entry.Id == id);
+    }
   }
 }
