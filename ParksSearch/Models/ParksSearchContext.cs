@@ -24,8 +24,8 @@ namespace ParksSearch.Models
             builder.Entity<StatePark>()
                 .HasData(
                     new StatePark { Id = 1, Name = "Bridle Trails", Address = "5300 116th Ave NE, Kirkland, WA", WheelchairAccess = true },
-                    new StatePark { Id = 1, Name = "Saint Edward", Address = "555 NE, Kenmore, WA", WheelchairAccess = true },
-                    new StatePark { Id = 1, Name = "Kitsap Memorial", Address = "1111 NE 136 St, Poulsbo, WA", WheelchairAccess = true }
+                    new StatePark { Id = 2, Name = "Saint Edward", Address = "555 NE, Kenmore, WA", WheelchairAccess = true },
+                    new StatePark { Id = 3, Name = "Kitsap Memorial", Address = "1111 NE 136 St, Poulsbo, WA", WheelchairAccess = true }
                     );
         }
     }
