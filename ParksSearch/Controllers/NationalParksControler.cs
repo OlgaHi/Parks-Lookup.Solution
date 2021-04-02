@@ -56,6 +56,13 @@ namespace ParksSearch.Controllers
       _db.Entry(nationalPark).State = EntityState.Modified;
       _db.SaveChanges();
     }
-    
+
+    [HttpDelete("{id}")]
+    public void Delete(int id)
+    {
+      var deletedPark = _db.NationalParks.FirstOrDefault(entry => entry.Id == id);
+      _db.NationalParks.Remove(deletedPark);
+      _db.SaveChanges();
+    } 
   }
 }
