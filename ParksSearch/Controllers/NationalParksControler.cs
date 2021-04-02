@@ -41,6 +41,13 @@ namespace ParksSearch.Controllers
     {
       return _db.NationalParks.FirstOrDefault(entry => entry.Id == id);
     }
+
+    [HttpPost]
+    public void Post([FromBody] NationalPark nationalPark)
+    {
+      _db.NationalParks.Add(nationalPark);
+      _db.SaveChanges();
+    }
     
   }
 }
