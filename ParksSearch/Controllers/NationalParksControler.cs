@@ -37,7 +37,7 @@ namespace ParksSearch.Controllers
     }
 
     [HttpGet("{id}")]
-    public ActionResult<National> GetNationalPark(int id)
+    public ActionResult<NationalPark> GetNationalPark(int id)
     {
       return _db.NationalParks.FirstOrDefault(entry => entry.Id == id);
     }
@@ -50,7 +50,7 @@ namespace ParksSearch.Controllers
     }
 
     [HttpPut("{id}")]
-    public void Put(int id, [FromBody] NationalParks nationalPark)
+    public void Put(int id, [FromBody] NationalPark nationalPark)
     {
       nationalPark.Id = id;
       _db.Entry(nationalPark).State = EntityState.Modified;
