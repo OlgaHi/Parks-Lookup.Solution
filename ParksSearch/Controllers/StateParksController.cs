@@ -60,7 +60,7 @@ namespace ParksSearch.Controllers
     [HttpDelete("{id}")]
     public void Delete(int id)
     {
-      var deletedPark = _db.StateParks.FirstOrDefault(entry => Id == id);
+      var deletedPark = _db.StateParks.FirstOrDefault(entry => entry.Id == id);
       _db.StateParks.Remove(deletedPark);
       _db.SaveChanges();
     } 
