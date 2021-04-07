@@ -90,13 +90,6 @@ Please follow this steps:
 
   cd Parks-Lookup.Solution
 
-#### .NET Core Commands:
- - Navigate to the /ParksSearch folder
- - Run the following command: dotnet restore
- - Run the following command: dotnet build
- - Run the following command to execute this compiled code: dotnet run
- - In browser navigate to http://localhost:5000
-
 
 - To start using SQL:
   - Open terminal and run this command: ```mysql -u[UserName] -p[Password]```.
@@ -117,6 +110,13 @@ Please follow this steps:
   }
 }
 ```
+#### .NET Core Commands:
+- Navigate to the /ParksSearch folder
+- Run the following command: dotnet restore
+- Run the following command: dotnet build
+- Run the following command to execute this compiled code: dotnet run
+- In browser navigate to http://localhost:5000
+
 
 Import Database Structure with Entity Framework Core
 
@@ -149,7 +149,7 @@ DELETE /api/{value}/{id}
 
 #### Example Query
 
-`https://localhost:5000/api/national/2`
+`http://localhost:5000/api/national/2`
 
 #### Sample JSON Response
 
@@ -275,7 +275,7 @@ DELETE /api/nationals/{id}
 [ASP.NET Core web API documentation with Swagger / OpenAPI](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0)
 [Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
 [Swashbuckle Getting Started](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md)
-[Swashbuckle.AspNetCore REAMDE](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
+[Swashbuckle.AspNetCore README](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
 
 ## Known Bugs
 
